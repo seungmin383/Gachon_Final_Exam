@@ -99,6 +99,7 @@ void ACEnemy::PlaceOnRandomPlanetSurface()
 
 	const FVector PlanetCenter = Planet->GroundMesh->GetComponentLocation();
 	const APawn* Player = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
+	
 	const FVector PlayerNormal = Player != nullptr
 		? (Player->GetActorLocation() - PlanetCenter).GetSafeNormal()
 		: FVector::UpVector;

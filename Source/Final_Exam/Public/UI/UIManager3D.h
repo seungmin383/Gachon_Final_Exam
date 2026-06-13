@@ -29,10 +29,10 @@ public:
 	float CameraDistance{ 250.0f };
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
-	float RightOffset{ 140.0f };
+	float RightOffset{ 200.0f };
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI")
-	float UpOffset{ 75.0f };
+	float UpOffset{ 90.f };
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "UI", meta = (ClampMin = "0.0"))
 	float HeartSpacing{ 35.0f };
